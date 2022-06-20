@@ -89,6 +89,12 @@ a {
   100% { opacity: 0; top: 75%;}
 }
 
+.small {
+	text-align: center;
+	font-size: 12px;
+	padding: 0px;
+	margin: 10px;
+}
 
 .app-header {
 	display: flex;
