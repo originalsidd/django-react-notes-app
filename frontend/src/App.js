@@ -16,6 +16,12 @@ function App() {
 
     return (
         <Router>
+            <div className='small'>
+                Due to lack of authentication and spam protection, i am disabling
+                the api routes for now. I don't have plans to implement further
+                logic in this app. However, if i ever do so, the app wil be back
+                working again. Cya fellas!
+            </div>
             <div id='root' className='container'>
                 <div className='app'>
                     <Header dark={dark} setDark={setDark} />
