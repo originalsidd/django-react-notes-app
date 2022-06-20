@@ -53,11 +53,11 @@ const NotePage = () => {
 
     const handleSubmit = () => {
         if (note?.body === '' || note === null) {
-            // deleteNote();
+            //             deleteNote();
         } else if (id !== 'new') {
-            // updateNote();
+            //             updateNote();
         } else if (id === 'new' && note?.body) {
-            // createNote();
+            //             createNote();
         }
         navigate('/');
     };
