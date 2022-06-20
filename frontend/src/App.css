@@ -320,3 +320,10 @@ input:checked+.slider:before {
 .note textarea::-webkit-scrollbar {
 	display: none;
 }
+
+.small {
+	text-align: center;
+	font-size: 12px;
+	padding: 0px;
+	margin: 10px;
+}

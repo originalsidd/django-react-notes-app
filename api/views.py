@@ -47,26 +47,30 @@ def getRoutes(request):
     return Response(routes)
 
 
-@api_view(['GET', 'POST'])
+@api_view([
+    'GET'
+    # 'POST'
+])
 def getNotes(request):
     if request.method == 'GET':
         return getNotesList(request)
-    if request.method == 'POST':
-        return createNote(request)
+    # if request.method == 'POST':
+    #     return createNote(request)
 
 
-@api_view(['GET', 'PUT', 'DELETE'])
+@api_view([
+    'GET'
+    # 'PUT',
+    #    'DELETE'
+])
 def getNote(request, pk):
     if request.method == 'GET':
         return getNoteDetail(request, pk)
-
-    if request.method == 'PUT':
-        return updateNote(request, pk)
-
-    if request.method == 'DELETE':
-        return deleteNote(request, pk)
-
-
+    # if request.method == 'PUT':
+    #     return updateNote(request, pk)
+#     if request.method == 'DELETE':
+#         return deleteNote(request, pk)
+# -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 # @api_view(['POST'])
 # def createNote(request):
 #     data = request.data
@@ -75,7 +79,6 @@ def getNote(request, pk):
 #     )
 #     serializer = NoteSerializer(note, many=False)
 #     return Response(serializer.data)
-
 # @api_view(['PUT'])
 # def updateNote(request, pk):
 #     data = request.data
@@ -84,8 +87,6 @@ def getNote(request, pk):
 #     if serializer.is_valid():
 #         serializer.save()
 #     return Response(serializer.data)
-
-
 # @api_view(['DELETE'])
 # def deleteNote(request, pk):
 #     note = Note.objects.get(id=pk)

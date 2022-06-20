@@ -53,11 +53,11 @@ const NotePage = () => {
 
     const handleSubmit = () => {
         if (note?.body === '' || note === null) {
-            deleteNote();
+            // deleteNote();
         } else if (id !== 'new') {
-            updateNote();
+            // updateNote();
         } else if (id === 'new' && note?.body) {
-            createNote();
+            // createNote();
         }
         navigate('/');
     };
@@ -73,7 +73,7 @@ const NotePage = () => {
                     <ArrowLeft onClick={handleSubmit} />
                 </h3>
                 {id !== 'new' ? (
-                    <button onClick={deleteNote}>Delete</button>
+                    <button onClick={() => {}}>Delete</button>
                 ) : (
                     <button onClick={handleSubmit}>Done</button>
                 )}
